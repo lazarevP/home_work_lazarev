@@ -16,3 +16,11 @@ if __name__ == '__main__':
     main()
 
 
+def validate(list_of_all_emails):
+    new_list = []
+    for email in list_of_all_emails:
+        if email not in new_list:
+            new_list.append(email)
+    if len(new_list) < len(list_of_all_emails):
+        raise ValueError
+

@@ -3,10 +3,11 @@ from datetime import date, datetime, timedelta
 
 class Employee:
 
-    def __init__(self, name, phone, salary_per_day):
+    def __init__(self, name, phone, salary_per_day, email):
         self.name = name
         self.phone = phone
         self.salary_per_day = salary_per_day
+        self.email = email
 
     def __lt__(self, other):
         return self.salary_per_day < other.salary_per_day
@@ -32,7 +33,7 @@ class Employee:
     def check_salary(self, days):
         return days * self.salary_per_day
 
-    def now_selery(self):
+    def now_salery(self):
         now = date.today()
         month_start = date(now.year, now.month, 1)
 
