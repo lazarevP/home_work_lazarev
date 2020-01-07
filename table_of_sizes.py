@@ -35,5 +35,3 @@ for i in table_of_sizes[country_from]:
 index_of_size1 = int(input())
 
 print('the size of {} is {}'.format(country_to, table_of_sizes[country_to][index_of_size1]))
-
-

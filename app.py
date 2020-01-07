@@ -24,3 +24,5 @@ def validate(list_of_all_emails):
     if len(new_list) < len(list_of_all_emails):
         raise ValueError
 
+
+
