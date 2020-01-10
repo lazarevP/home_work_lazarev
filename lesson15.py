@@ -27,5 +27,11 @@ class Employee:
     def __str__(self):
         return f"{self.__class__.__name__}, {self.first_name}, {self.last_name}, {self.now_salery()}"
 
+    @classmethod
+    def candidate_creator(cls):
+        file = open('candidates.csv', 'w')
+        file.split(',')
+        return 
+
 
 
